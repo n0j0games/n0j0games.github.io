@@ -1,2 +1,2 @@
 # n0j0games.github.io
-Publishing Stuff
+OPEN PAGE: https://n0j0games.github.io
