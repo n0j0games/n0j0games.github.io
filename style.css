@@ -1,0 +1,61 @@
+/* Allgmein */
+body {
+  margin: 0px;
+  font-family: 'Barlow', sans-serif;
+  color: #675f6b;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /*Amimation*/
+  background: #332f35;
+  text-align: center;
+}
+
+.headBar {
+  background: #232125;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.txtSubtitle {
+  font-weight: 800;
+  font-size: 25px;
+  margin: 0px;
+}
+
+.secHead {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heady {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+#logo3 {
+  height: 80px;
+  margin: 10px;
+}
+
+#logo2 {
+  width: 200px;
+}
