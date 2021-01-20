@@ -1,0 +1,16 @@
+{
+"companyName": "n0j0",
+"productName": "PixelRUN",
+"productVersion": "1.1",
+"dataUrl": "Web 1_1.data.unityweb",
+"wasmCodeUrl": "Web 1_1.wasm.code.unityweb",
+"wasmFrameworkUrl": "Web 1_1.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": true,
+"multithreading": false,
+"unityVersion": "2019.1.1f1"
+}

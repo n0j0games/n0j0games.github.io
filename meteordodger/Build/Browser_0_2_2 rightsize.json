@@ -1,0 +1,16 @@
+{
+"companyName": "noahschuette.de",
+"productName": "Meteor Dodger",
+"productVersion": "0.2",
+"dataUrl": "Browser_0_2_2 rightsize.data.unityweb",
+"wasmCodeUrl": "Browser_0_2_2 rightsize.wasm.code.unityweb",
+"wasmFrameworkUrl": "Browser_0_2_2 rightsize.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.1.1f1"
+}
