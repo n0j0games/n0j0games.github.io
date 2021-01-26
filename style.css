@@ -2,9 +2,16 @@
 :root {
   --bg: #141d26;
   --head: #243447;
+  --light: #33537a;
   --hover: #c51f5d;
   --text: #fff;
   --text2: #bbb;
+/* Status-Colors */
+  --outdated: #a53030;
+  --released: #2b8435;
+  --beta: #be772b;
+  --alpha: #3c5e8b;
+  --prototype: #7a367b;
 }
 
 body {
@@ -48,6 +55,8 @@ img {
 a {
   text-decoration: none;
 }
+
+/* Header */
 
 .headBar {
   background: var(--head);
@@ -99,19 +108,27 @@ a {
   height: 80px;
   margin: 10px;
 }
-
-
-/* LeftContent */
-
 .content {
   margin-top: 50px;
   width: 100%;
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+/* Games */
+
+.leftTitle {
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  align-self: flex-start;
 }
 
 .leftContent {
@@ -145,21 +162,56 @@ a {
   margin-bottom: 10px;
 }
 
-.gameName p {
+.gameName img {
+  border-radius: 15%;
+  border: 3px solid var(--text);
+  width: 55px;
+  margin: 0;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.tit {
   font-weight: 600;
   font-size: 20px;
   margin: 0;
   display: inline-block;
 }
 
-.gameName img {
-  border-radius: 15%;
-  border: 3px solid var(--text);
-  width: 55px;
-  margin: 0;
-  margin-right: 10px;
-  display: inline-block;
+.ver {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  display: inline-block
 }
+
+#indev {
+  color: var(--alpha);
+}
+
+#paused {
+  color: var(--beta);
+}
+
+#released {
+  color: var(--released);
+}
+
+#canceled {
+  color: var(--outdated);
+}
+
+#prototype {
+  color: var(--prototype);
+}
+
+#finished {
+  color: var(--text2);
+}
+
+/* LINKS */
 
 .gameLinks {
   display: flex;
@@ -167,7 +219,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 .gameLinks p {
@@ -175,6 +227,7 @@ a {
   font-size: 15px;
   margin: 0;
   display: inline-block;
+  text-transform: lowercase;
 }
 
 .gameLinks i {
@@ -208,12 +261,40 @@ a {
   overflow-y: auto;
 }
 
+/* Left-Bar Year */
+
 .year {
   align-self: flex-start;
   font-weight: 400;
   font-size: 18px;
   color: var(--text2);
   display: inline-block;
+}
+
+/* Twitter */
+
+.twitterTitle{
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.twitterSubInfo{
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.twitterSubInfo a{
+  color: var(--text);
+  text-decoration: none;
+}
+
+.twitterSubInfo a:hover {
+  color: var(--hover);
 }
 
 .twitter-timeline {

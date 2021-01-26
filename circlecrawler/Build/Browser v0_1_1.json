@@ -1,0 +1,16 @@
+{
+"companyName": "n0j0games",
+"productName": "CircleCrawler",
+"productVersion": "0.1.1",
+"dataUrl": "Browser v0_1_1.data.unityweb",
+"wasmCodeUrl": "Browser v0_1_1.wasm.code.unityweb",
+"wasmFrameworkUrl": "Browser v0_1_1.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.7f2"
+}
