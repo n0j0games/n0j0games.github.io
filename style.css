@@ -279,6 +279,22 @@ a {
   display: inline-block;
 }
 
+/* Tumblr */
+
+.midContent {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.tumblrTitle{
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 /* Twitter */
 
 .rightContent {
@@ -311,7 +327,7 @@ a {
 }
 
 .twitter-timeline {
-  background-color: transparent;
+  background-color: var(--head);
 }
 
 /* (C) 2021 noahschuette.de */
