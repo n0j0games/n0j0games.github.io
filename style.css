@@ -7,11 +7,19 @@
   --text: #fff;
   --text2: #bbb;
 /* Status-Colors */
-  --outdated: #a53030;
-  --released: #2b8435;
-  --beta: #be772b;
-  --alpha: #3c5e8b;
-  --prototype: #7a367b;
+  --outdated: #777; /* stopped, removed or something else */
+  --released: #246dcc; /* game is released, no developement */
+  --beta: #cc7824; /* not beta, PAUSED */
+  --alpha: #24cc53; /* not alpha, INDEV */
+  --prototype: #cc246d; /* idk whats happening to this project */
+
+  /* Status-Colors
+    --outdated: #777;
+    --released: #3c5e8b;
+    --beta: #be772b;
+    --alpha: #2b8435;
+    --prototype: #a53030;
+  */
 }
 
 body {
@@ -105,8 +113,11 @@ a {
 }
 
 #logo {
-  height: 80px;
+  height: 96px;
   margin: 10px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 .content {
   margin-top: 50px;
