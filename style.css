@@ -6,11 +6,12 @@
   --hover: #c51f5d;
   --text: #fff;
   --text2: #bbb;
+  --text3: #888;
 /* Status-Colors */
   --outdated: #777; /* stopped, removed or something else */
-  --released: #246dcc; /* game is released, no developement */
-  --beta: #cc7824; /* not beta, PAUSED */
-  --alpha: #24cc53; /* not alpha, INDEV */
+  --released: #479aff; /* game is released, no developement */
+  --paused: #cc7824; /* not beta, PAUSED */
+  --indev: #24cc53; /* not alpha, INDEV */
   --prototype: #cc246d; /* idk whats happening to this project */
 
   /* Status-Colors
@@ -69,7 +70,7 @@ a {
 .headBar {
   background: var(--head);
   width: 100%;
-  height: 100px;
+  height: auto;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -104,6 +105,14 @@ a {
   justify-content: center;
 }
 
+.heady:hover .txtTitle {
+  color: var(--hover);
+}
+
+.heady:hover #logo {
+  content:url("images/logopink.png");
+}
+
 .heady {
   display: flex;
   flex-wrap: nowrap;
@@ -114,11 +123,12 @@ a {
 
 #logo {
   height: 96px;
-  margin: 10px;
+  margin: 20px;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 }
+
 .content {
   margin-top: 50px;
   width: 100%;
@@ -213,11 +223,11 @@ a {
 }
 
 #indev {
-  color: var(--alpha);
+  color: var(--indev);
 }
 
 #paused {
-  color: var(--beta);
+  color: var(--paused);
 }
 
 #released {
@@ -225,7 +235,7 @@ a {
 }
 
 #canceled {
-  color: var(--outdated);
+  color: var(--text3);
 }
 
 #prototype {
@@ -235,6 +245,7 @@ a {
 #finished {
   color: var(--text2);
 }
+
 
 /* LINKS */
 
