@@ -8,6 +8,10 @@
     <meta name="description" content="n0j0games is publishing Indie Games made with Unity Engine, mostly in 2D">
     <script src="https://kit.fontawesome.com/038f795198.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="pixelrunEmbed/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "pixelrunEmbed/v1.1.json");
+    </script>
     <title>n0j0games</title>
   </head>
   <body>
@@ -26,6 +30,11 @@
         <p class="txtSubtitle">UNDER CONSTRUCTION</p>
       </div>
     </section>-->
+
+    <section class="embedGame">
+      <div id="unityContainer"></div>
+    </section>
+
     <section class="content">
 
 <!-- Left Row: Games  -->
@@ -38,6 +47,20 @@
             <p>2021</p>
           </div>
 
+          <!-- PixelRUN Remake -->
+          <div class="game">
+            <div class="gameName">
+              <img src="images/pixelrun.png" alt="">
+              <p class="tit">PixelRUN</p>
+              <p class="ver" id="released">RELEASED</p>
+              <p class="ver">v1.1</p>
+              <a class="ver" title="WebGL Browser Support" href="pixelrun2"><i class="fab fa-html5"></i></a>
+            </div>
+            <div class="gameLinks">
+              <a href="pixelrun2"> <i class="fab fa-html5"></i> <p>Play in Browser</p> </a>
+            </div>
+          </div>
+
           <!-- Smashteroid -->
           <div class="game">
             <div class="gameName">
@@ -46,12 +69,12 @@
               <p class="ver" id="indev">IN DEVELOPEMENT</p>
               <p class="ver">ALPHA</p>
               <p class="ver">v0.7.1</p>
-              <a class="ver" href="#"><i class="fab fa-android"></i></a>
-              <a class="ver" href="#"><i class="fab fa-html5"></i></a>
+              <a class="ver" title="Android Support" href="#"><i class="fab fa-android"></i></a>
+              <!--<a class="ver" href="#"><i class="fab fa-html5"></i></a>-->
             </div>
             <div class="gameLinks">
               <a href="smashteroid"> <i class="fas fa-external-link-alt"></i> <p>Project Page</p> </a>
-              <a href="https://n0j0games.github.io/downloads/smashteroid/latest.apk"> <i class="fab fa-android"></i> <p>Download .apk for Android</p> </a>
+              <a href="https://github.com/n0j0games/n0j0games.github.io/blob/main/downloads/smashteroid/latest.apk"> <i class="fab fa-android"></i> <p>Download .apk for Android</p> </a>
               <a href="https://n0j0games.itch.io/smashteroid"> <i class="fab fa-itch-io"></i> <p>Visit Project at Itch.io</p> </a>
             </div>
           </div>
@@ -68,7 +91,7 @@
               <p class="ver" id="paused">PAUSED</p>
               <p class="ver">ALPHA</p>
               <p class="ver">v0.2.5</p>
-              <a class="ver" href="#"><i class="fab fa-windows"></i></a>
+              <a class="ver" title="Windows (Soon)" href="#"><i class="fab fa-windows"></i></a>
             </div>
           </div>
 
@@ -77,9 +100,10 @@
             <div class="gameName">
               <img src="images/toiletpaperLogo.png" alt="">
               <p class="tit">Toiletpaper Chase</p>
-              <p class="ver" id="finished">FINISHED</p>
+              <p class="ver" id="canceled">CANCELED</p>
+              <p class="ver">PROTOTYPE</p>
               <p class="ver">v0.3</p>
-              <a class="ver" href="#"><i class="fab fa-html5"></i></a>
+              <a class="ver" title="WebGL Browser Support" href="toiletpaperchase"><i class="fab fa-html5"></i></a>
             </div>
             <div class="gameLinks">
               <a href="toiletpaperchase"> <i class="fab fa-html5"></i> <p>Play in Browser</p> </a>
@@ -91,16 +115,16 @@
             <div class="gameName">
               <img src="images/circlecrawlerLogo.png" alt="">
               <p class="tit">Circle Crawler</p>
-              <p class="ver" id="released">RELEASED</p>
-              <p class="ver">ALPHA</p>
+              <p class="ver" id="canceled">CANCELED</p>
+              <p class="ver">PROTOTYPE</p>
               <p class="ver">v0.1.1</p>
-              <a class="ver" href="#"><i class="fab fa-html5"></i></a>
-              <a class="ver" href="#"><i class="fab fa-android"></i></a>
+              <a class="ver" title="WebGL Browser Support" href="circlecrawler"><i class="fab fa-html5"></i></a>
+              <a class="ver" title="Android Support" href="https://github.com/n0j0games/n0j0games.github.io/blob/main/downloads/circleCrawler.apk"><i class="fab fa-android"></i></a>
             </div>
             <div class="gameLinks">
               <a href="circlecrawler"> <i class="fab fa-html5"></i> <p>Play in Browser</p> </a>
               <!--<a href="https://n0j0games.itch.io/circlecrawler"> <i class="fab fa-itch-io"></i> <p>Play at itch.io</p> </a>-->
-              <a href="https://github.com/n0j0games/n0j0games.github.io/raw/main/downloads/circleCrawler.apk"> <i class="fab fa-android"></i> <p>Download .apk for Android</p> </a>
+              <a href="https://github.com/n0j0games/n0j0games.github.io/blob/main/downloads/circleCrawler.apk"> <i class="fab fa-android"></i> <p>Download .apk for Android</p> </a>
             </div>
           </div>
 
@@ -113,9 +137,10 @@
             <div class="gameName">
               <img src="images/laseredLogo.png" alt="">
               <p class="tit">Lasered</p>
-              <p class="ver" id="canceled">CANCELED</p>
+              <p class="ver" id="finished">FINISHED</p>
+              <p class="ver">PROTOTYPE</p>
               <p class="ver">v0.1.1</p>
-              <a class="ver" href="#"><i class="fab fa-html5"></i></a>
+              <a class="ver" title="WebGL Browser Support" href="lasered"><i class="fab fa-html5"></i></a>
             </div>
             <div class="gameLinks">
               <a href="lasered"> <i class="fab fa-html5"></i> <p>Play in Browser</p> </a>
@@ -128,9 +153,10 @@
               <img src="images/meteordodgerLogo.png" alt="">
               <p class="tit">Meteor Dodger</p>
               <p class="ver" id="finished" >FINISHED</p>
+              <p class="ver">PROTOTYPE</p>
               <p class="ver">v0.2.2</p>
-              <a class="ver" href="#"><i class="fab fa-html5"></i></a>
-              <a class="ver" href="#"><i class="fab fa-windows"></i></a>
+              <a class="ver" title="WebGL Browser Support" href="meteordodger"><i class="fab fa-html5"></i></a>
+              <!--<a class="ver" href="#"><i class="fab fa-windows"></i></a>-->
             </div>
             <div class="gameLinks">
               <a href="meteordodger"> <i class="fab fa-html5"></i> <p>Play in Browser</p> </a>
@@ -140,19 +166,20 @@
             </div>
           </div>
 
-          <!-- PixelRUN -->
+          <!-- PixelRUN
           <div class="game">
             <div class="gameName">
               <img src="images/pixelrunLogo.png" alt="">
-              <p class="tit">PixelRUN</p>
-              <p class="ver" id="finished">FINISHED</p>
+              <p class="tit">PixelRUN Prototype</p>
+              <p class="ver" id="canceled">CANCELED</p>
+              <p class="ver">PROTOTYPE</p>
               <p class="ver">v1.1</p>
-              <a class="ver" href="#"><i class="fab fa-html5"></i></a>
+              <a class="ver" title="WebGL Browser Support" href="pixelrun"><i class="fab fa-html5"></i></a>
             </div>
             <div class="gameLinks">
               <a href="pixelrun"> <i class="fab fa-html5"></i> <p>Play in Browser</p> </a>
             </div>
-          </div>
+          </div>-->
 
             <!-- <a class="document" href="https://docs.google.com/spreadsheets/d/1jVDciWuEQbQUx30BJmwapLoGsfmm4WxihgsJ75hqwKI/edit?usp=sharing">Project Overview (Google Sheet)</a>
 -->
